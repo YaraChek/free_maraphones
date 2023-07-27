@@ -38,7 +38,7 @@ TO_EXIT = {'STOP', 'EXIT', 'СТОП', 'ВИХІД', 'ДОСИТЬ', 'ДОСТА
 FILE_NAME = 'cities.dat'
 cities = read_city(FILE_NAME)
 cities_capital = {city.upper() for city in cities}
-first_letters = {city[0].upper() for city in cities}
+first_letters = {city[0] for city in cities_capital}
 letter_city = {first_letter: tuple(city for city in cities if city[0] == first_letter)
                for first_letter in first_letters}
 first_letters.clear()

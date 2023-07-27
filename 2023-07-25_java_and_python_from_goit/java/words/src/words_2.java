@@ -43,7 +43,8 @@ public class words_2 {
                 char lastCompCityChar = lastCompCity.charAt(lastCompCity.length() - 1);
                 char firstInputChar = input.charAt(0);
 
-                if (Character.toLowerCase(firstInputChar) != Character.toLowerCase(lastCompCityChar)) {
+                if (Character.toLowerCase(firstInputChar) !=
+                        Character.toLowerCase(lastCompCityChar)) {
                     System.out.println("Назва міста повинна починатися з літери “"
                             + Character.toUpperCase(lastCompCityChar) + "”");
                     continue;
